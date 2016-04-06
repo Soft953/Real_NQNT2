@@ -3,53 +3,28 @@ using System.Collections;
 
 public class cam_script : MonoBehaviour
 {
-    
+    public float minX = -360.0f;
+    public float maxX = 360.0f;
 
-    // Use this for initialization
-    void Start()
-    {
+    public float minY = -45.0f;
+    public float maxY = 45.0f;
 
-    }
+    public float sensX = 100.0f;
+    public float sensY = 100.0f;
 
-    // Update is called once per frame
+    float rotationY = 0.0f;
+    float rotationX = 0.0f;
+
     void Update()
     {
-        move();
-        //getUnit(); 
 
-    }
-
-    private void move()
-    {
-        if (Input.GetButton("up"))
-            transform.Translate(Vector3.forward);
-
-        if (Input.GetButton("down"))
-            transform.Translate(Vector3.back);
-
-        if (Input.GetButton("left"))
-            transform.Translate(Vector3.left);
-
-        if (Input.GetButton("right"))
-            transform.Translate(Vector3.right);
-
-        
-
-
-    }
-
-   /* private void getUnit()
-    { RaycastHit hit;
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetMouseButton(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                if (hit.transform.CompareTag("Enemy"))
-                {
-                    Debug.Log("Touché");
-                }
-            }
+            rotationX += Input.GetAxis("Mouse X") * sensX * Time.deltaTime;
+            rotationY += Input.GetAxis("Mouse Y") * sensY * Time.deltaTime;
+            rotationY = Mathf.Clamp(rotationY, minY, maxY);
+            transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
         }
-    }*/
+    }
+
 }

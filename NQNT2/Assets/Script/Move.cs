@@ -2,21 +2,35 @@
 using System.Collections;
 
 public class Move : MonoBehaviour {
-	private float speed = 0.25f;
+    float turnSpeed = 10.0f;
+    float moveSpeed = 10.0f;
+    float mouseTurnMultiplier = 1.0f;
+
+    private float x;
+    private float z;
 	// Use this for initialization
 	void Start () {
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-        move();
-
-	
+	void Update ()
+    {
+        x = 0.0f;
+        z = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+        transform.Translate(0, 0, z);
+        if (Input.GetButtonDown("q") || Input.GetButtonDown("d"))
+        {
+            x = Input.GetAxis("Horizontal");
+        }
+        if (Input.GetMouseButton(1))
+        {
+            x = Input.GetAxis("Mouse X") * turnSpeed * mouseTurnMultiplier;
+        }
+        transform.Rotate(0, x, 0);
 	}
 
-    private void move()
+    /*private void move()
     {
         if (Input.GetButton("up"))
 			transform.Translate(Vector3.forward * speed);
@@ -40,11 +54,7 @@ public class Move : MonoBehaviour {
             transform.Translate(Vector3.up);
 
         if (Input.mousePosition.y == 0)
-            transform.Translate(Vector3.down);*/
-
-        
-
-
-    }
-
+            transform.Translate(Vector3.down);
+      }
+    */
 }
