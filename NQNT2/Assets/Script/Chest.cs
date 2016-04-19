@@ -4,19 +4,19 @@ using System.Collections;
 public class Chest : MonoBehaviour {
 
     private static PlayerControl playerStats;
-    //public GameObject chest;
+    public GameObject storage;
     public GameObject particules;
-    private bool is_open = false;
+    bool is_open = false;
+    public static bool boolean = false;
     private bool showGUI = false;
-    public Animation animation;
+    //public Animation animation;
     float cpt = 5.0f;
-    public string chestName = "";
     public int amount = 0;
 	// Use this for initialization
 	void Start ()
     {
         //playerStats = gameObject.Find("Health").GetComponent(PlayerStats);
-        animation = GetComponent<Animation>();
+        //animation = GetComponent<Animation>();
     }
 	
 	// Update is called once per frame
@@ -27,7 +27,9 @@ public class Chest : MonoBehaviour {
             if (Input.GetKeyDown("e") && is_open == false)
             {
                 PlayerControl.money += amount;
+                storage.SetActive(true);
                 is_open = true;
+                boolean = true;
                 Instantiate(particules, transform.position, transform.rotation);
                 Destroy(this.gameObject);
                 //animation.Play("chest_anim");

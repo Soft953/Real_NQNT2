@@ -3,11 +3,16 @@ using System.Collections;
 
 public class enemyHealth : MonoBehaviour {
 
-    public static int health = 150;
+    public int health = 150;
     Bad_guy bad_guy;
     GameObject enemy = GameObject.Find("skeleton");
     Animation anim;
     public GameObject monObj;
+
+    public int Health
+    {
+        get { return health; }
+    }
     void Start()
     {
         anim = GetComponent<Animation>();

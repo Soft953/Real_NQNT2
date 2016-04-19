@@ -6,6 +6,8 @@ public class MouseSelection : MonoBehaviour {
 	RaycastHit hit;
     bool b = false;
 	public GameObject indicateur;
+    int enemyhealth;
+    private enemyHealth enemyHealthScript;
 	public static GameObject currentlySelected;
 	private Vector3 mouseDownPoint;
 	private static bool selecting;
@@ -19,13 +21,17 @@ public class MouseSelection : MonoBehaviour {
     {
         if (b)
         {
-            GUI.Box(new Rect(1800, 50, 90, 20), "Health :" + enemyHealth.health);
+            GUI.Box(new Rect(1800, 50, 90, 20), "Health :" + enemyhealth);
         }
         
     }
+    void Start()
+    {
+        enemyhealth = currentlySelected.GetComponent<enemyHealth>().health;
+    }
 	void Update()
 	{
-		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+        Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		Debug.DrawRay (ray.origin, ray.direction * raycastLength, Color.red);
 
 		if (Physics.Raycast(ray, out hit, raycastLength)) 
@@ -61,10 +67,12 @@ public class MouseSelection : MonoBehaviour {
 					Debug.Log ("enemy");
                     b = true;
                     hit.collider.transform.FindChild("Selected").gameObject.SetActive(true);
-						selecting = true;
-						currentlySelected = hit.collider.gameObject;
+					selecting = true;
+				    currentlySelected = hit.collider.gameObject;
+                    enemyHealthScript = currentlySelected.GetComponent<enemyHealth>();
+                    enemyhealth = enemyHealthScript.health;
 
-				}
+                }
 
 				//hitting build
 				/*if (hit.collider.gameObject.tag == "Build")
