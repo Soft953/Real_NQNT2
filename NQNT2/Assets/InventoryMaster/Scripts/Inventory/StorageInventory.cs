@@ -103,7 +103,7 @@ public class StorageInventory : MonoBehaviour
         float distance = Vector3.Distance(this.gameObject.transform.position, player.transform.position);
         if(Chest.boolean)
         {
-            inventory.SetActive(true);
+            //inventory.SetActive(true);
         }
         if (showTimer)
         {
