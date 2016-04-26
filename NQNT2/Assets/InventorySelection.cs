@@ -23,10 +23,10 @@ public class InventorySelection : MonoBehaviour {
             {
                 inventory.SetActive(false);
                 inventoryOpen = false;
-                if ()
+                /*if ()
                 {
 
-                }
+                }*/
             }
             else
             { 
