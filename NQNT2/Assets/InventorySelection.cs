@@ -5,14 +5,17 @@ public class InventorySelection : MonoBehaviour {
 
     public GameObject inventory;
     public GameObject character;
+    public GameObject craft;
     bool inventoryOpen;
     bool characterOpen;
+    bool craftOpen;
     // Use this for initialization
     void Start ()
     {
         inventoryOpen = false;
-        characterOpen = false;   
-	}
+        characterOpen = false;
+        craftOpen = false;
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -23,10 +26,14 @@ public class InventorySelection : MonoBehaviour {
             {
                 inventory.SetActive(false);
                 inventoryOpen = false;
+<<<<<<< HEAD
                 /*if ()
                 {
 
                 }*/
+=======
+
+>>>>>>> b8fe400f903c18acc95b121a5e6ce302ec819927
             }
             else
             { 
@@ -46,6 +53,19 @@ public class InventorySelection : MonoBehaviour {
             {
                 character.SetActive(true);
                 characterOpen = true;
+            }
+        }
+        if (Input.GetKeyDown("k"))
+        {
+            if (craftOpen)
+            {
+                craft.SetActive(false);
+                craftOpen = false;
+            }
+            else
+            {
+                craft.SetActive(true);
+                craftOpen = true;
             }
         }
     }

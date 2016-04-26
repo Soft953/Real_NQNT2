@@ -49,7 +49,7 @@ public class PauseMenu : MonoBehaviour {
     }
     public void MainMenu()
     {
-        Application.LoadLevel("Menu");
+        //Application.LoadLevel("Menu");
     }
     public void Save()
     {

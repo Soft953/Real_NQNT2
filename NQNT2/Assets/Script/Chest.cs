@@ -24,18 +24,19 @@ public class Chest : MonoBehaviour {
     {
         if (showGUI)
         {
-            if (Input.GetKeyDown("e") && is_open == false)
+            if (Input.GetKeyDown("e"))
             {
-                PlayerControl.money += amount;
                 storage.SetActive(true);
-                is_open = true;
-                boolean = true;
-                Instantiate(particules, transform.position, transform.rotation);
-                Destroy(this.gameObject);
-                //animation.Play("chest_anim");
-                
-
+                if (is_open == false)
+                {
+                    PlayerInventory.currentMoney += amount;
+                    boolean = true;
+                    Instantiate(particules, transform.position, transform.rotation);
+                    Destroy(this.gameObject);
+                    is_open = true;
+                }
             }
+            
         }
         /*if (is_open)
         {
@@ -49,7 +50,7 @@ public class Chest : MonoBehaviour {
             }
         }*/
 
-	}
+    }
     void OnTriggerEnter(Collider hit)
     {
         if (hit.gameObject.tag == "Player")
