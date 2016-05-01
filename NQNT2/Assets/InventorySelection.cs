@@ -26,14 +26,7 @@ public class InventorySelection : MonoBehaviour {
             {
                 inventory.SetActive(false);
                 inventoryOpen = false;
-<<<<<<< HEAD
-                /*if ()
-                {
 
-                }*/
-=======
-
->>>>>>> b8fe400f903c18acc95b121a5e6ce302ec819927
             }
             else
             { 

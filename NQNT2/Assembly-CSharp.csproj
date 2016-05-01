@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Campfire\Script\FireLightScript.cs" />
+     <Compile Include="Assets\CooldowmSpell.cs" />
      <Compile Include="Assets\Graphisme\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
      <Compile Include="Assets\Graphisme\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
      <Compile Include="Assets\Graphisme\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -84,6 +85,7 @@
      <Compile Include="Assets\Graphisme\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\Graphisme\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\Graphisme\NatureStarterKit\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\HealSpell.cs" />
      <Compile Include="Assets\InventoryMaster\Scripts\CraftSystem\Blueprint.cs" />
      <Compile Include="Assets\InventoryMaster\Scripts\CraftSystem\BlueprintDatabase.cs" />
      <Compile Include="Assets\InventoryMaster\Scripts\CraftSystem\CraftResultSlot.cs" />
@@ -124,6 +126,7 @@
      <Compile Include="Assets\InventorySelection.cs" />
      <Compile Include="Assets\MouseSelection.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Pont_levis_script.cs" />
      <Compile Include="Assets\Rotor.cs" />
      <Compile Include="Assets\Script\Bad_guy.cs" />
      <Compile Include="Assets\Script\Chest.cs" />
@@ -131,6 +134,7 @@
      <Compile Include="Assets\Script\ExplosionSpell.cs" />
      <Compile Include="Assets\Script\FireDetect.cs" />
      <Compile Include="Assets\Script\FireSpell.cs" />
+     <Compile Include="Assets\Script\GameInProgress.cs" />
      <Compile Include="Assets\Script\LevelManager.cs" />
      <Compile Include="Assets\Script\LockRotation.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />
@@ -153,7 +157,12 @@
      <Compile Include="Assets\Script\mob.cs" />
      <Compile Include="Assets\Script\player.cs" />
      <Compile Include="Assets\Script\weapon.cs" />
+     <Compile Include="Assets\SkillSpell.cs" />
+     <Compile Include="Assets\SpellDisplay.cs" />
+     <Compile Include="Assets\Tazo_fx\Script\BillBoard.cs" />
      <Compile Include="Assets\Teleporter.cs" />
+     <Compile Include="Assets\Teleportervillage.cs" />
+     <Compile Include="Assets\TradeInventory.cs" />
      <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
      <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
      <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />

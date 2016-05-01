@@ -49,6 +49,8 @@
      <Compile Include="Assets\KY_effects\Script\Lighting.js" />
      <Compile Include="Assets\Script\StatsDisplay.js" />
      <Compile Include="Assets\Script\settingsvid.js" />
+     <Compile Include="Assets\Tazo_fx\Script\Red_UVScroller.js" />
+     <Compile Include="Assets\Tazo_fx\Script\Red_rotateThis.js" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\Graphisme\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Graphisme\NatureStarterKit\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />

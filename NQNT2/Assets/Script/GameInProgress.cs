@@ -13,9 +13,8 @@ public class GameInProgress : MonoBehaviour {
     static bool b5 = false;
 
     void Start()
-
     {
-
+		
     }
 
 
@@ -25,5 +24,6 @@ public class GameInProgress : MonoBehaviour {
         {
             b1 = true;
         }
+
     }
 }
