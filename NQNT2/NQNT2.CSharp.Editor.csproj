@@ -117,6 +117,14 @@
     <Compile Include="Assets\Graphisme\NatureStarterKit2\Editor\ImageEffects\SunShaftsEditor.cs" />
     <Compile Include="Assets\Graphisme\NatureStarterKit2\Editor\ImageEffects\TonemappingEditor.cs" />
     <Compile Include="Assets\Graphisme\NatureStarterKit2\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+    <Compile Include="Assets\InventoryMaster\Editor\CraftSystemEditor.cs" />
+    <Compile Include="Assets\InventoryMaster\Editor\EquipmentSystemEditor.cs" />
+    <Compile Include="Assets\InventoryMaster\Editor\HotbarEditor.cs" />
+    <Compile Include="Assets\InventoryMaster\Editor\IM_Manager.cs" />
+    <Compile Include="Assets\InventoryMaster\Editor\InventoryDesignEditor.cs" />
+    <Compile Include="Assets\InventoryMaster\Editor\InventoryEditor.cs" />
+    <Compile Include="Assets\InventoryMaster\Editor\StorageInventoryEditor.cs" />
+    <Compile Include="Assets\InventoryMaster\Editor\TooltipEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
@@ -201,7 +209,11 @@
     <None Include="Assets\Graphisme\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Graphisme\NatureStarterKit2\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
     <None Include="Assets\Graphisme\NatureStarterKit2\info.txt" />
+<<<<<<< HEAD
     <None Include="Assets\KNIGHT PACK\shader\Mobile-Bumped_DoubleSided.shader" />
+=======
+    <None Include="Assets\InventoryMaster\readme.txt" />
+>>>>>>> ded8d16525dadf77de495cc4dfada53ad203d278
     <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
     <None Include="Assets\Medieval props\Read me.txt" />
     <None Include="Assets\SkeletonData\animations.txt" />

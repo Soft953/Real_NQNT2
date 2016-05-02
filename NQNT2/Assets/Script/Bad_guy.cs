@@ -37,6 +37,7 @@ public class Bad_guy : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+        moveDirection.y = 0f;
         distance = Vector3.Distance(Target.position, transform.position);
         if (distance < lookAtDistance)
         {
@@ -70,7 +71,7 @@ public class Bad_guy : MonoBehaviour {
         moveDirection = transform.forward;
         moveDirection *= moveSpeed;
 
-        moveDirection.y -= gravity * Time.deltaTime;
+        //moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
     void attack()
@@ -85,7 +86,7 @@ public class Bad_guy : MonoBehaviour {
             anim.Play("attack");
             if (cpt<=0 || n==0)//&& weapon.gameObject.name == "Health")
             {
-                PlayerControl.health -= Damage;
+                PlayerInventory.currentHealth -= Damage;
                 n++;
             }
             else

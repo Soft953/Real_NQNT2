@@ -34,7 +34,7 @@ public class PlayerControl : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -45,6 +45,5 @@ public class PlayerControl : MonoBehaviour
             health = 0;
             Debug.Log("Player died !");
         }
-        HealthBar.GetComponent<Scrollbar>().size -= health / 100;
     }
 }
