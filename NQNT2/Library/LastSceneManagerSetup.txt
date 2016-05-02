@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/map soloplayer.unity
-=======
-- path: Assets/Level_2_map.unity
->>>>>>> edf8cb316b05889111c009c3849b11a1a0b82ba8
   isLoaded: 1
   isActive: 1

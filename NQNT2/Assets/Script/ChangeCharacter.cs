@@ -13,9 +13,9 @@ public class ChangeCharacter : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        monScript = character2.GetComponent<character_move>();
-        monScript.enabled = false;
-        //character2.SetActive(false);
+        /*monScript = character2.GetComponent<character_move>();
+        monScript.enabled = false;*/
+        character2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,26 +36,26 @@ public class ChangeCharacter : MonoBehaviour {
 
             if (GUI.Button(new Rect(10, 10, 50, 50), "1"))
             {
-                camera1.SetActive(true);
+                /*camera1.SetActive(true);
                 camera2.SetActive(false);
                 monScript = character1.GetComponent<character_move>();
                 monScript.enabled = true;
                 monScript = character2.GetComponent<character_move>();
-                monScript.enabled = false;
-                /*character1.SetActive(true);
-                character2.SetActive(false);*/
+                monScript.enabled = false;*/
+                character1.SetActive(true);
+                character2.SetActive(false);
             }
 
             if (GUI.Button(new Rect(10, 60, 50, 50), "2"))
             {
-                camera1.SetActive(false);
+                /*camera1.SetActive(false);
                 camera2.SetActive(true);
                 monScript = character1.GetComponent<character_move>();
                 monScript.enabled = false;
                 monScript = character2.GetComponent<character_move>();
-                monScript.enabled = true;
-                /*character1.SetActive(false);
-                character2.SetActive(true);*/
+                monScript.enabled = true;*/
+                character1.SetActive(false);
+                character2.SetActive(true);
             }
 
         }
