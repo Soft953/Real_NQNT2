@@ -7,6 +7,8 @@ Project("{55418216-749A-693A-8B98-FC0F4FF52713}") = "NQNT2", "Assembly-CSharp.cs
 EndProject
 Project("{55418216-749A-693A-8B98-FC0F4FF52713}") = "NQNT2", "Assembly-CSharp-Editor.csproj", "{DFE0F40F-5E09-ECF3-8D61-7DAB1485D7DE}"
 EndProject
+Project("{55418216-749A-693A-8B98-FC0F4FF52713}") = "NQNT2", "Assembly-UnityScript.unityproj", "{79657568-E82F-57C0-8B87-77EB6BC51667}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{DFE0F40F-5E09-ECF3-8D61-7DAB1485D7DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFE0F40F-5E09-ECF3-8D61-7DAB1485D7DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFE0F40F-5E09-ECF3-8D61-7DAB1485D7DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79657568-E82F-57C0-8B87-77EB6BC51667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79657568-E82F-57C0-8B87-77EB6BC51667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79657568-E82F-57C0-8B87-77EB6BC51667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79657568-E82F-57C0-8B87-77EB6BC51667}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
