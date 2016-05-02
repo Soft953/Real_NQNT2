@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/sauvegarde_map_test.unity
+- path: Assets/map soloplayer.unity
   isLoaded: 1
   isActive: 1

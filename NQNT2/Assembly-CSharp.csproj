@@ -154,6 +154,7 @@
      <Compile Include="Assets\Script\cam_script_move.cs" />
      <Compile Include="Assets\Script\cam_script_zoom.cs" />
      <Compile Include="Assets\Script\character_move.cs" />
+     <Compile Include="Assets\Script\deathscript.cs" />
      <Compile Include="Assets\Script\enemyHealth.cs" />
      <Compile Include="Assets\Script\mob.cs" />
      <Compile Include="Assets\Script\player.cs" />

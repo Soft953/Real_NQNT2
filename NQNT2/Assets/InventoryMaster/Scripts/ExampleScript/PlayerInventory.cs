@@ -292,6 +292,12 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
+    IEnumerator Death_Time()
+    {
+        yield return new WaitForSeconds(1);
+        Application.LoadLevel("Menu");
+    }
+
     IEnumerator Regen()
     {
         currentMana += 1;
@@ -309,8 +315,18 @@ public class PlayerInventory : MonoBehaviour
             regenMana = false;
             StartCoroutine(Regen());
         }
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
+        {
             currentHealth = 0;
+            StartCoroutine(Death_Time());
+            Debug.Log("truc");
+            
+        }
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
 
         UpdateManaBar();
         UpdateHPBar();

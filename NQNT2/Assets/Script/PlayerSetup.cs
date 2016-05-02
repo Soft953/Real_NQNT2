@@ -12,6 +12,8 @@ public class PlayerSetup : NetworkBehaviour {
 	Behaviour[] componentsToDisable;
 
     Camera sceneCamera;
+    Canvas HPMANACanvas;
+    Canvas Inventory;
 
     void Start()
     {
@@ -29,6 +31,7 @@ public class PlayerSetup : NetworkBehaviour {
             sceneCamera = Camera.main;
             if (sceneCamera != null)
             {
+                
                 sceneCamera.gameObject.SetActive(false);
             }
             
@@ -40,6 +43,7 @@ public class PlayerSetup : NetworkBehaviour {
     {
         if (sceneCamera != null)
         {
+            
             sceneCamera.gameObject.SetActive(true);
         }
     }
